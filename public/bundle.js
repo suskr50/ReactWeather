@@ -57,7 +57,7 @@
 	var hashHistory = _require.hashHistory;
 
 	var Main = __webpack_require__(216);
-	var Example = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Example\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Example = __webpack_require__(218);
 	var Weather = __webpack_require__(219);
 	var About = __webpack_require__(241);
 
@@ -24829,7 +24829,33 @@
 	module.exports = Nav;
 
 /***/ },
-/* 218 */,
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Example = function Example(prop) {
+		return React.createElement(
+			'div',
+			null,
+			React.createElement(
+				'h3',
+				null,
+				'Examples '
+			),
+			React.createElement(
+				'p',
+				null,
+				' Welcome to the examples page '
+			)
+		);
+	};
+
+	module.exports = Example;
+
+/***/ },
 /* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26194,9 +26220,18 @@
 
 	var About = function About(props) {
 		return React.createElement(
-			'h3',
+			'div',
 			null,
-			'About Component '
+			React.createElement(
+				'h3',
+				null,
+				'About '
+			),
+			React.createElement(
+				'p',
+				null,
+				' This is a little about nothing'
+			)
 		);
 	};
 
