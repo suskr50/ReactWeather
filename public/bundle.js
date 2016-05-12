@@ -57,7 +57,7 @@
 	var hashHistory = _require.hashHistory;
 
 	var Main = __webpack_require__(216);
-	var Example = __webpack_require__(218);
+	var Example = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Example\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	var Weather = __webpack_require__(219);
 	var About = __webpack_require__(241);
 
@@ -24829,24 +24829,7 @@
 	module.exports = Nav;
 
 /***/ },
-/* 218 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-
-	var Example = function Example(prop) {
-		return React.createElement(
-			'h3',
-			null,
-			'Example Component '
-		);
-	};
-
-	module.exports = Example;
-
-/***/ },
+/* 218 */,
 /* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
